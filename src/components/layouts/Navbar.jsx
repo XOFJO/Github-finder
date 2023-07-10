@@ -1,6 +1,6 @@
-import React from "react";
-import { FaGithub } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Navbar({ title }) {
   return (
@@ -17,9 +17,6 @@ function Navbar({ title }) {
             <Link to="/" className="btn btn-ghost btn-sm rounded-btn">
               Home
             </Link>
-            <Link to="/about" className="btn btn-ghost btn-sm rounded-btn">
-              About
-            </Link>
           </div>
         </div>
       </div>
@@ -28,7 +25,7 @@ function Navbar({ title }) {
 }
 
 Navbar.defaultProps = {
-  title: "Github Finder",
+  title: 'GitHub Search',
 };
 
 export default Navbar;
