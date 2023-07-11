@@ -1,8 +1,8 @@
 import React from 'react';
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import GithubContext from '../../context/GithubContext';
 import AlertContext from '../../context/AlertContext';
-import image from '../../images/robot5.jpg';
+import image from '../../images/alien.jpg';
 import background from '../../images/background.jpg';
 import { useNavigate } from 'react-router-dom';
 
@@ -11,6 +11,14 @@ function UserSearch() {
   const { users, searchUsers, clear } = useContext(GithubContext);
   const { alert, setAlert } = useContext(AlertContext);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    console.log('object');
+    const centerX = document.body.scrollWidth / 2;
+    const centerY = document.body.scrollHeight / 2;
+    window.scrollTo(centerX, centerY);
+  }, []);
+
   function handleChange(e) {
     setText(e.target.value);
   }
