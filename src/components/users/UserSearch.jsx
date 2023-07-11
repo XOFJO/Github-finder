@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useContext } from 'react';
 import GithubContext from '../../context/GithubContext';
 import AlertContext from '../../context/AlertContext';
-import image from '../../images/alien.jpg';
+import image from '../../images/robot5.jpg';
 import background from '../../images/background.jpg';
 import { useNavigate } from 'react-router-dom';
 
@@ -73,7 +73,7 @@ function UserSearch() {
           {/* <!--Right Col--> */}
           <div className="w-full xl:w-3/5 p-12 overflow-hidden">
             <img
-              className="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6"
+              className="mx-auto scale-100 w-full md:w-4/6 transform -rotate-6 transition hover:scale-200 duration-700 ease-in-out hover:rotate-6"
               src={image}
               alt="alien"
             />
