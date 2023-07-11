@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useContext, useEffect } from 'react';
 import GithubContext from '../../context/GithubContext';
 import AlertContext from '../../context/AlertContext';
-import image from '../../images/alien.jpg';
+import image from '../../images/robot5.jpg';
 import background from '../../images/background.jpg';
 import { useNavigate } from 'react-router-dom';
 
@@ -13,7 +13,6 @@ function UserSearch() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    console.log('object');
     const centerX = document.body.scrollWidth / 2;
     const centerY = document.body.scrollHeight / 2;
     window.scrollTo(centerX, centerY);
